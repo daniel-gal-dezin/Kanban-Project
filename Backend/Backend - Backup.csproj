@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>IntroSE.Kanban.Backend</RootNamespace>
+    <AssemblyName>IntroSE.Kanban.Backend</AssemblyName>
+    <OutputType>Library</OutputType>
+    <BaseOutputPath>C:\software engineering\git\2022-2023-2023-2024-29\Backend\bin</BaseOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.15" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.117" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="kanban.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="log4net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ServiceLayer\GradingService.cs.bak">
+      <DependentUpon>GradingService.cs</DependentUpon>
+    </None>
+  </ItemGroup>
+</Project>
